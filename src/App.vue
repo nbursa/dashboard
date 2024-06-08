@@ -8,7 +8,7 @@
         <!-- Main content area with three columns -->
         <div class="grid grid-cols-1 overflow-y-auto md:overflow-hidden md:grid-cols-[auto_1fr_auto] overflow-auto">
             <!-- New narrow column on the left -->
-            <div class="flex items-center justify-center border-r border-gray-500 md:px-6">
+            <div class="hidden md:flex items-center justify-center border-r border-gray-500 md:px-6">
                 Left
             </div>
 
@@ -32,7 +32,7 @@
             </div>
 
             <!-- Right column content area -->
-            <div class="flex items-center justify-center border-l border-gray-500 md:px-28">
+            <div class="hidden md:flex items-center justify-center border-l border-gray-500 md:px-28">
                 Right
             </div>
         </div>
