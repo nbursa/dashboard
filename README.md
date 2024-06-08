@@ -1,9 +1,71 @@
-# Vue 3 + TypeScript + Vite
+# Personal Dashboard
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+A responsive personal dashboard built with Vue 3, Tailwind CSS, Vite, and TypeScript. This project includes widgets for weather, to-do lists, a calendar, and news feeds, with a fully responsive layout.
 
-## Recommended Setup
+## Table of Contents
 
-- [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (previously Volar) and disable Vetur
+- [Features](#features)
+- [Technologies](#technologies)
+- [Project Setup](#project-setup)
+- [Development](#development)
+- [Build](#build)
 
-- Use [vue-tsc](https://github.com/vuejs/language-tools/tree/master/packages/tsc) for performing the same type checking from the command line, or for generating d.ts files for SFCs.
+## Features
+
+- Responsive layout with navigation and bottom sections.
+- Weather, To-Do List, Calendar, and News Feed widgets.
+- Tailwind CSS for styling.
+- Vite for fast development and build.
+- TypeScript for type safety.
+
+## Technologies
+
+- [Vue 3](https://vuejs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Vite](https://vitejs.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+
+## Project Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/personal-dashboard.git
+   cd personal-dashboard
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open the app in your browser**
+    - The development server should start on `http://localhost:3000`.
+
+## Development
+
+- To run the development server with hot reloading:
+  ```bash
+  npm run dev
+  ```
+
+- To lint the project:
+  ```bash
+  npm run lint
+  ```
+
+## Build
+
+- To create a production build:
+  ```bash
+  npm run build
+  ```
+
+- To preview the production build locally:
+  ```bash
+  npm run preview
+  ```
