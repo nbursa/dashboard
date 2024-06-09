@@ -13,7 +13,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, onMounted, PropType } from 'vue'
+import { defineComponent, ref, onMounted } from 'vue'
 import axios from 'axios';
 
 interface Weather {
@@ -25,18 +25,18 @@ interface Weather {
 export default defineComponent({
   name: 'Weather',
   props: {
-    weather: {
-      type: Object as PropType<Weather | null>,
-      required: true,
-    },
-    loading: {
-      type: Boolean,
-      required: true,
-    },
-    error: {
-      type: String,
-      required: true,
-    },
+    // weather: {
+    //   type: Object as PropType<Weather | null>,
+    //   required: true,
+    // },
+    // loading: {
+    //   type: Boolean,
+    //   required: true,
+    // },
+    // error: {
+    //   type: String,
+    //   required: true,
+    // },
   },
   setup() {
     const weather = ref<Weather | null>(null);
@@ -45,8 +45,8 @@ export default defineComponent({
 
     const fetchWeather = async () => {
       try {
-        const apiKey = 'YOUR_API_KEY';
-        const city = 'London';
+        const apiKey = import.meta.env.VITE_OPENWEATHERMAP_API_KEY as string;
+        const city = 'Belgrade';
         const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
 
         const response = await axios.get(url);
