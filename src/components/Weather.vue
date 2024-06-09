@@ -24,20 +24,6 @@ interface Weather {
 
 export default defineComponent({
   name: 'Weather',
-  props: {
-    // weather: {
-    //   type: Object as PropType<Weather | null>,
-    //   required: true,
-    // },
-    // loading: {
-    //   type: Boolean,
-    //   required: true,
-    // },
-    // error: {
-    //   type: String,
-    //   required: true,
-    // },
-  },
   setup() {
     const weather = ref<Weather | null>(null);
     const loading = ref(true);

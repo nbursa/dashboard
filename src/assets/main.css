@@ -7,6 +7,10 @@
         @apply font-medium text-primary no-underline hover:text-primary-hover;
     }
 
+    *, *::before, *::after {
+        @apply m-0 p-0 box-border;
+    }
+
     body {
         @apply m-0 p-0 text-[16px] font-sans box-border text-light-bg bg-dark-bg overflow-hidden;
     }
