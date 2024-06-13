@@ -12,11 +12,9 @@ const mongoURI = process.env.MONGO_URI as string;
 const dbName = process.env.DATABASE_NAME as string;
 const collectionName = process.env.COLLECTION_NAME as string;
 
-// Middleware
 app.use(cors());
 app.use(express.json());
 
-// MongoDB connection
 mongoose.connect(mongoURI, { dbName });
 
 const db = mongoose.connection;
@@ -34,7 +32,6 @@ const todoSchema = new mongoose.Schema({
 
 const Todo = mongoose.model('Todo', todoSchema);
 
-// API endpoint to get todos
 app.get('/api/todos', async (req: Request, res: Response) => {
   try {
     const todos = await Todo.find();
@@ -44,7 +41,6 @@ app.get('/api/todos', async (req: Request, res: Response) => {
   }
 });
 
-// Start the server
 app.listen(port, () => {
   console.log(`Server is running on port: ${port}`);
 });
