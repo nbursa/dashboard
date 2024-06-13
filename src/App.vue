@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen w-screen overflow-hidden grid grid-rows-[auto_1fr_auto] border border-gray-500">
+  <div class="h-screen w-screen overflow-hidden grid md:grid-rows-[auto_1fr_auto] border border-gray-500">
     <!-- Top navigation -->
     <div class="flex items-center justify-center border-b border-gray-500 py-4">
       Nav
@@ -63,7 +63,3 @@ export default defineComponent({
   },
 });
 </script>
-
-<style scoped>
-/* Add your custom styles if necessary */
-</style>
