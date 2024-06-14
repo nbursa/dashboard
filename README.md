@@ -1,6 +1,7 @@
-# Personal Dashboard
+# Dashboard
 
-A responsive personal dashboard built with Vue 3, Tailwind CSS, Vite, and TypeScript. This project includes widgets for weather, to-do lists, a calendar, and news feeds, with a fully responsive layout.
+A responsive dashboard built with Vue 3, Tailwind CSS, Vite, and TypeScript. This project includes widgets for weather, to-do lists, a calendar, and news feeds... with a fully responsive layout.
+This project is in progress.
 
 ## Table of Contents
 
