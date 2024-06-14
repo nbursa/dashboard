@@ -7,7 +7,7 @@
         <a href="#" class="hover:text-gray-400">Contact</a>
       </div>
       <div class="text-center md:text-right">
-        <p>&copy; 2024 Your Company. All rights reserved.</p>
+        <p>&copy; 2024 MyCompany. All rights reserved</p>
       </div>
   </footer>
 </template>
