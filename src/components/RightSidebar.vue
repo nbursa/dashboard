@@ -10,7 +10,7 @@
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import NewsFeedWidget from './NewsFeedWidget.vue'
+import NewsFeedWidget from './widgets/NewsFeedWidget.vue'
 import { faNewspaper } from '@fortawesome/free-solid-svg-icons';
 
 export default defineComponent({

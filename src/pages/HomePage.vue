@@ -36,17 +36,17 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import WeatherWidget from '../components/WeatherWidget.vue';
-import TodoWidget from '../components/TodoWidget.vue';
-import CalendarWidget from '../components/CalendarWidget.vue';
+import WeatherWidget from '../components/widgets/WeatherWidget.vue';
+import TodoWidget from '../components/widgets/TodoWidget.vue';
+import CalendarWidget from '../components/widgets/CalendarWidget.vue';
 import Carousel from '../components/Carousel.vue';
 import LeftSidebar from '../components/LeftSidebar.vue';
 import RightSidebar from '../components/RightSidebar.vue';
-import ClockWidget from '../components/ClockWidget.vue'
-import QuoteWidget from '../components/QuoteWidget.vue'
-import StockMarketWidget from '../components/StockMarketWidget.vue'
-import FinanceWidget from '../components/FinanceWidget.vue'
-import FitnessTrackerWidget from '../components/FitnessTrackerWidget.vue'
+import ClockWidget from '../components/widgets/ClockWidget.vue'
+import QuoteWidget from '../components/widgets/QuoteWidget.vue'
+import StockMarketWidget from '../components/widgets/StockMarketWidget.vue'
+import FinanceWidget from '../components/widgets/FinanceWidget.vue'
+import FitnessTrackerWidget from '../components/widgets/FitnessTrackerWidget.vue'
 
 export default defineComponent({
   name: 'HomePage',
