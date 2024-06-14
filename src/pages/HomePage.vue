@@ -4,24 +4,24 @@
     <LeftSidebar class="sidebar" />
   </div>
 
-  <div class="grid grid-cols-1 md:grid-rows-[1fr_2fr]">
+  <div class="grid grid-cols-1 md:grid-rows-[1fr_2fr] overflow-y-auto md:overflow-hidden">
     <div class="p-1 grid md:grid-rows-1 overflow-hidden">
       <Carousel />
     </div>
     <div class="grid md:grid-cols-2 md:grid-rows-2">
-      <div class="flex gap-2 overflow-y-auto p-1">
+      <div class="flex flex-col md:flex-row gap-2 p-1">
         <WeatherWidget />
         <QuoteWidget />
       </div>
-      <div class="flex gap-2 p-1">
+      <div class="flex flex-col sm:flex-row gap-2 p-1">
         <ClockWidget />
         <TodoWidget />
       </div>
-      <div class="flex gap-2 p-1">
+      <div class="flex flex-col sm:flex-row gap-2 p-1">
         <CalendarWidget class="w-full" />
         <FitnessTrackerWidget class="w-full" />
       </div>
-      <div class="flex gap-2 p-1">
+      <div class="flex flex-col md:flex-row gap-2 p-1">
         <StockMarketWidget class="w-full" />
         <FinanceWidget class="w-full" />
       </div>
