@@ -12,8 +12,8 @@
         <div
           v-for="(day, index) in daysInMonth"
           :key="index"
-          class="flex items-center justify-center py-0 lg:px-1 cursor-pointer hover:bg-gray-200 rounded-full"
-          :class="{ 'bg-yellow-300': isToday(day) }"
+          class="flex items-center justify-center py-0 lg:px-1 cursor-pointer hover:bg-gray-200 hover:text-gray-800 rounded-full"
+          :class="{ 'bg-yellow-300 text-gray-800': isToday(day) }"
           @click.stop="selectDay(day)"
         >
           {{ day }}

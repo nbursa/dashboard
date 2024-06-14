@@ -14,7 +14,15 @@
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { faHome, faCloudSun, faTasks, faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
+import {
+  faHome,
+  faCloudSun,
+  faTasks,
+  faCalendarAlt,
+  faDumbbell,
+  faPiggyBank,
+  faChartLine,
+} from '@fortawesome/free-solid-svg-icons'
 
 export default defineComponent({
   name: 'LeftSidebar',
@@ -22,10 +30,13 @@ export default defineComponent({
   setup() {
     const expanded = ref(false);
     const menuItems = ref([
-      { icon: faHome.iconName, text: 'Home' },
-      { icon: faCloudSun.iconName, text: 'Weather' },
-      { icon: faTasks.iconName, text: 'To-Do List' },
-      { icon: faCalendarAlt.iconName, text: 'Calendar' },
+      { icon: faHome.iconName, text: 'Home', path: '/' },
+      { icon: faCloudSun.iconName, text: 'Weather', path: '/weather' },
+      { icon: faTasks.iconName, text: 'Tasks', path: '/tasks' },
+      { icon: faCalendarAlt.iconName, text: 'Calendar', path: '/calendar' },
+      { icon: faDumbbell.iconName, text: 'Fitness', path: '/fitness' },
+      { icon: faPiggyBank.iconName, text: 'Finance', path: '/finance' },
+      { icon: faChartLine.iconName, text: 'Stocks', path: '/stocks' },
     ]);
 
     const expandSidebar = () => {
