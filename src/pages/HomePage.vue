@@ -4,7 +4,7 @@
     <LeftSidebar class="sidebar" />
   </div>
 
-  <div class="grid grid-cols-1 md:grid-rows-[1fr_2fr] overflow-y-auto md:overflow-hidden">
+  <div class="grid grid-cols-1 p-4 md:p-0 md:grid-rows-[1fr_2fr] overflow-y-auto md:overflow-hidden">
     <div class="p-1 grid md:grid-rows-1 overflow-hidden">
       <Carousel />
     </div>
