@@ -3,8 +3,10 @@
     <router-link to="/" class="hover:scale-110 transition duration-200">Home</router-link>
     <router-link to="/weather" class="hover:scale-110 transition duration-200">Weather</router-link>
     <router-link to="/tasks" class="hover:scale-110 transition duration-200">Tasks</router-link>
+    <router-link to="/fitness" class="hover:scale-110 transition duration-200">Fitness</router-link>
+    <router-link to="/finance" class="hover:scale-110 transition duration-200">Finance</router-link>
+    <router-link to="/stocks" class="hover:scale-110 transition duration-200">Stocks</router-link>
     <router-link to="/calendar" class="hover:scale-110 transition duration-200">Calendar</router-link>
-    <router-link to="/news" class="hover:scale-110 transition duration-200">News Feed</router-link>
   </nav>
 </template>
 

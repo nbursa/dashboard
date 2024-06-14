@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center justify-between p-4 bg-light-bg/20 rounded-lg shadow-lg">
+  <RouterLink to="/stocks"  class="flex flex-col items-center justify-between p-4 bg-light-bg/20 rounded-lg shadow-lg">
     <h2 class="text-xl font-semibold mr-auto">Stock Market</h2>
     <div class="w-full">
       <div v-for="stock in stocks" :key="stock.symbol" class="w-full flex items-center justify-between gap-2 md:gap-6 mb-2">
@@ -9,7 +9,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </RouterLink>
 </template>
 
 <script lang="ts">

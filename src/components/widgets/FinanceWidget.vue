@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center justify-between p-4 bg-white/20 rounded-lg shadow-lg">
+  <RouterLink to="/finance"  class="flex flex-col items-center justify-between p-4 bg-white/20 rounded-lg shadow-lg">
     <h2 class="text-lg font-semibold mb-4 mr-auto">Finance Tracker</h2>
     <div class="mb-4 text-lg">
       <div class="flex justify-between">
@@ -15,7 +15,7 @@
       <span>Remaining Budget:</span>
       <span>{{ remainingBudget }}</span>
     </div>
-  </div>
+  </RouterLink>
 </template>
 
 <script lang="ts">
