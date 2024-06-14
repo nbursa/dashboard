@@ -15,12 +15,20 @@ const collectionName = process.env.COLLECTION_NAME as string;
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect(mongoURI, { dbName });
+const connectDB = async () => {
+  try {
+    await mongoose.connect(mongoURI, { dbName });
+    console.log(`Connected to MongoDB database: ${dbName}`);
+  } catch (err) {
+    console.error('Connection error', err);
+    process.exit(1);
+  }
+};
 
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', () => {
-  console.log('Connected to MongoDB');
+  console.log('Connected to MongoDB via event');
 });
 
 const todoSchema = new mongoose.Schema({
@@ -41,6 +49,11 @@ app.get('/api/todos', async (req: Request, res: Response) => {
   }
 });
 
-app.listen(port, () => {
-  console.log(`Server is running on port: ${port}`);
-});
+const startServer = async () => {
+  await connectDB();
+  app.listen(port, () => {
+    console.log(`Server is running on port: ${port}`);
+  });
+};
+
+startServer();

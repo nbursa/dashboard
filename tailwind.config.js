@@ -13,6 +13,7 @@ export default {
         'light-text': '#213547',
         'light-bg': '#ffffff',
         'webkit-focus-ring-color': '#5b9dd9',
+        black: '#111111',
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'Avenir', 'Helvetica', 'Arial', 'sans-serif'],

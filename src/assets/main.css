@@ -3,33 +3,34 @@
 @tailwind utilities;
 
 @layer components {
-    a {
-        @apply font-medium text-primary no-underline hover:text-primary-hover;
-    }
 
     *, *::before, *::after {
         @apply m-0 p-0 box-border;
     }
 
     body {
-        @apply m-0 p-0 text-[16px] font-sans box-border text-light-bg bg-dark-bg overflow-hidden;
+        @apply m-0 p-0 text-[16px] font-sans box-border text-light-bg bg-black overflow-hidden;
     }
 
     h1 {
         @apply text-6xl leading-tight;
     }
 
+    a {
+        @apply font-medium text-white/85 no-underline hover:text-light-bg transition duration-200;
+    }
+
     button {
-        @apply rounded-lg border border-transparent px-4 py-2 text-base font-medium bg-dark-bg text-white cursor-pointer transition duration-200;
+        @apply ring-1 ring-transparent px-4 py-2 text-base font-medium text-white cursor-pointer transition duration-200 bg-white/50 rounded-full p-2 outline-0;
     }
 
     button:hover {
-        @apply border-primary;
+        @apply outline-none ring-4 scale-105 transition duration-200;
     }
 
     button:focus,
     button:focus-visible {
-        @apply outline-none ring-4 ring-webkit-focus-ring-color;
+        @apply outline-none ring-2;
     }
 
     .card {

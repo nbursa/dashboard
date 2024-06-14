@@ -1,15 +1,17 @@
 <template>
-  <div class="flex items-center justify-center w-full h-full">
-    <div>
-      <div v-if="loading">Loading...</div>
-      <div v-else-if="error">{{ error }}</div>
-      <div v-else>
-        <h3>{{ weather?.name }}</h3>
-        <p>{{ weather?.weather[0]?.description }}</p>
-        <p>{{ weather?.main?.temp }} °C</p>
+      <div class="flex items-center justify-center w-full h-full shadow-lg">
+        <RouterLink to="/weather" class="bg-white/10 backdrop-filter backdrop-blur-lg rounded-lg w-full h-full flex flex-col items-center justify-center flex-1 p-4">
+            <div class="">
+              <div v-if="loading" class="text-center text-gray-500">Loading...</div>
+              <div v-else-if="error" class="text-center text-red-500">{{ error }}</div>
+              <div v-else>
+                <h3 class="text-2xl font-semibold text-center">{{ weather?.name }}</h3>
+                <p class="text-lg text-center">{{ weather?.weather[0]?.description }}</p>
+                <p class="text-lg text-center">{{ weather?.main?.temp }} °C</p>
+              </div>
+            </div>
+        </RouterLink>
       </div>
-    </div>
-  </div>
 </template>
 
 <script lang="ts">
@@ -23,7 +25,7 @@ interface Weather {
 }
 
 export default defineComponent({
-  name: 'Weather',
+  name: 'WeatherWidget',
   setup() {
     const weather = ref<Weather | null>(null);
     const loading = ref(true);

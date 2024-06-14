@@ -1,46 +1,19 @@
 <template>
-  <div class="h-screen w-screen overflow-hidden grid md:grid-rows-[auto_1fr_auto] border border-gray-500">
+  <div class="h-screen w-screen overflow-hidden grid md:grid-rows-[auto_1fr_auto]">
     <!-- Top navigation -->
-    <div class="flex items-center justify-center border-b border-gray-500 py-4">
-      Nav
+    <div class="flex items-center justify-center h-14">
+      <nav class="px-6 py-2 my-2 inline-flex items-center justify-center gap-4 rounded-full bg-white/10">
+        <router-link to="/">Weather</router-link>
+        <router-link to="/todos">To-Do List</router-link>
+        <router-link to="/calendar">Calendar</router-link>
+        <router-link to="/news">News Feed</router-link>
+      </nav>
     </div>
 
-    <!-- Main content area -->
-    <div class="grid grid-cols-1 md:grid-cols-[auto_1fr_auto] grid-rows-1 h-full overflow-auto">
-      <!-- Left column (hidden on mobile) -->
-      <div class="hidden md:flex items-center justify-center border-r border-gray-500 md:px-6">
-        Left
-      </div>
-
-      <!-- Central grid -->
-      <div class="grid grid-cols-1 md:grid-rows-[1fr_2fr] h-full">
-        <div class="border border-gray-500 flex items-center justify-center overflow-hidden">
-          Top row
-        </div>
-        <div class="grid md:grid-cols-2 md:grid-rows-2 overflow-hidden">
-          <div class="border border-gray-500 overflow-y-auto">
-            <Weather />
-          </div>
-          <div class="border border-gray-500 flex items-center justify-start overflow-y-auto ">
-            <TodoList />
-          </div>
-          <div class="border border-gray-500 flex items-center justify-start overflow-y-auto">
-            <Calendar />
-          </div>
-          <div class="border border-gray-500 flex items-center justify-start overflow-y-auto">
-            <NewsFeed />
-          </div>
-        </div>
-      </div>
-
-      <!-- Right column (hidden on mobile) -->
-      <div class="hidden md:flex items-center justify-center border-l border-gray-500 md:px-28">
-        Right
-      </div>
-    </div>
+    <router-view class="relative h-full"></router-view>
 
     <!-- Bottom navigation -->
-    <div class="flex items-center justify-center border-t border-gray-500 py-4">
+    <div class="flex items-center justify-center py-4 h-14">
       Bottom
     </div>
   </div>
@@ -48,18 +21,8 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import Weather from './components/Weather.vue';
-import TodoList from './components/TodoList.vue';
-import Calendar from './components/Calendar.vue';
-import NewsFeed from './components/NewsFeed.vue';
 
 export default defineComponent({
   name: 'App',
-  components: {
-    Weather,
-    TodoList,
-    Calendar,
-    NewsFeed,
-  },
 });
 </script>
