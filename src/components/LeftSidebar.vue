@@ -2,7 +2,7 @@
   <div @mouseenter="expandSidebar" @mouseleave="collapseSidebar" class="h-full flex flex-col p-2 text-white transition-all duration-300" :class="expanded ? 'w-48' : 'w-14'">
     <div class="flex flex-col justify-start flex-0 gap-2 w-full h-full">
       <div v-for="item in menuItems" :key="item.text" class="group flex w-full h-fit">
-        <RouterLink :to="`/${item.text.toLowerCase().replace(' ', '-')}`" class="w-full flex items-center justify-start p-2 whitespace-nowrap">
+        <RouterLink :to="`/${item.text.toLowerCase().replace(' ', '-')}`" class="w-full flex items-center justify-start p-2 whitespace-nowrap hover:scale-110 transition duration-200">
           <FontAwesomeIcon :icon="['fas', item.icon]" class="w-6 h-6" />
           <span class="transition-opacity duration-300" :class="expanded ? 'visible ml-4' : 'hidden'">{{ item.text }}</span>
         </RouterLink>
