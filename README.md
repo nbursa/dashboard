@@ -1,6 +1,6 @@
 # Dashboard
 
-A responsive dashboard built with Vue 3, Tailwind CSS, Vite, and TypeScript. This project includes widgets for weather, to-do lists, a calendar, and news feeds... with a fully responsive layout.
+A responsive dashboard built with Vue 3, Tailwind CSS, Vite, and TypeScript. This project includes widgets for weather, task lists, a calendar, and news feeds... with a fully responsive layout.
 This project is in progress.
 
 ## Table of Contents
@@ -14,7 +14,7 @@ This project is in progress.
 ## Features
 
 - Responsive layout with navigation and bottom sections.
-- Weather, To-Do List, Calendar, and News Feed widgets.
+- Weather, Task List, Calendar, and News Feed widgets.
 - Tailwind CSS for styling.
 - Vite for fast development and build.
 - TypeScript for type safety.
