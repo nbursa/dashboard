@@ -1,7 +1,13 @@
 # Dashboard
 
+![Desktop.png](public/Desktop.png)
+![Sidebar.png](public/Sidebar.png)
+![News.png](public/News.png)
+
 A responsive dashboard built with Vue 3, Tailwind CSS, Vite, and TypeScript. This project includes widgets for weather, task lists, a calendar, and news feeds... with a fully responsive layout.
 This project is in progress.
+
+> **Warning: This repository is a work in progress. Changes may occur frequently, and the code may not be stable.**
 
 ## Table of Contents
 
