@@ -7,7 +7,7 @@
         <RouterLink to="/contact" class="hover:text-gray-400">Contact</RouterLink>
       </div>
       <div class="text-center md:text-right">
-        <p>&copy; 2024 MyCompany. All rights reserved</p>
+        <p>&copy; 2024 @nbursa. All rights reserved</p>
       </div>
   </footer>
 </template>
